@@ -169,12 +169,12 @@
 											id="D11"></span> ]</small>
 									<p class="card-text">
 										<a>Modulo L =<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-												id="longitud_value">
+												id="modlongitud_value">
 											</span>
 										</a>
 									</p>
 									<input type="range" class="custom-range" min="0.5" max="3" value="1.7" step="0.1"
-										id="longitud_range">
+										id="modlongitud_range">
 								</div>
 							</div>
 						</div>
@@ -327,13 +327,22 @@
 	<script type=text/javascript>
 		$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 
-		  var slider1 = document.getElementById("longitud_range");
-		  var output1 = document.getElementById("longitud_value");
+		  var slider1 = document.getElementById("modlongitud_range");
+		  var output1 = document.getElementById("modlongitud_value");
 		  output1.innerHTML = slider1.value;
 		  slider1.oninput = function () {
 			  output1.innerHTML = this.value;
 			  fetchdata()
 		  }
+
+		  var slider2 = document.getElementById("inclinacion_range");
+		  var output2 = document.getElementById("inclinacion_value");
+		  output2.innerHTML = slider2.value;
+		  slider2.oninput = function () {
+			  output2.innerHTML = this.value;
+			  fetchdata()
+		  }
+
 
 
 		  var slider3 = document.getElementById("peana_range");
@@ -391,7 +400,8 @@
 
 		  function fetchdata() {
 			$.getJSON($SCRIPT_ROOT + '/formulario', {
-				'longitud': document.getElementById("longitud_value").innerHTML,
+				'modlongitud': document.getElementById("modlongitud_value").innerHTML,
+				'inclinacion': document.getElementById("inclinacion_value").innerHTML,
 				'peana': document.getElementById("peana_value").innerHTML,
 				'pretil': document.getElementById("pretil_value").innerHTML,
 				'latitud': document.getElementById("latitud_value").innerHTML,

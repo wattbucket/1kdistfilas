@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'pk'
 @app.route('/informe')
 def informe():
     inclinacion=session["inclinacion"]
-    longitud=session["longitud"]
+    modlongitud=session["modlongitud"]
     peana=session["peana"]
     pretil=session["pretil"]
     latitud=session["latitud"]
@@ -24,7 +24,7 @@ def informe():
     df=session["df"]
 
     #  devuelta navegador
-    informe=render_template('notebook.html', inclinacion=inclinacion, longitud=longitud, latitud=latitud, p=peana, h0=pretil,  hp=hp,dp=dp, d0=d0,di=di, df=df)
+    informe=render_template('notebook.html', inclinacion=inclinacion, L=modlongitud, latitud=latitud, p=peana, h0=pretil,  hp=hp,dp=dp, d0=d0,di=di, df=df)
     return jsonify( informe=informe)
 
 
@@ -33,10 +33,10 @@ def informe():
 def formulario():
     # datos del navegador
     inclinacion = request.args.get('inclinacion', 0, type=int)
-    longitud = request.args.get('longitud', 0, type=float)
+    modlongitud = request.args.get('modlongitud', 0, type=float)
     peana = request.args.get('peana', 0, type=float)
     pretil = request.args.get('pretil', 0, type=float)
-    latitud = request.args.get('latitud', 0, type=int)
+    latitud = request.args.get('latitud', 0, type=float)
     # calculos
 
 
@@ -44,7 +44,7 @@ def formulario():
                     index=['Latitud','k'])
     df=df.to_html()
 
-    L=longitud
+    L=modlongitud
     hp=round(L*np.sin(inclinacion*np.pi/180),2)
     dp=round(L*np.cos(inclinacion*np.pi/180),2)
 
@@ -62,7 +62,7 @@ def formulario():
 
     # 
     session["inclinacion"]=inclinacion
-    session["longitud"]=longitud
+    session["modlongitud"]=modlongitud
     session["peana"]=peana
     session["pretil"]=pretil
     session["latitud"]=latitud
