@@ -50,8 +50,9 @@
 					<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
 					<path fill-rule="evenodd"
 						d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+				</svg>
 
-					<!-- <strong>1 kW/m<sup>2</sup></strong> -->
+				<!-- <strong>1 kW/m<sup>2</sup></strong> -->
 			</a>
 
 			<a id=informe class="nav-link" href="{{ url_for('infor')}}">
@@ -59,17 +60,16 @@
 					xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd"
 						d="M12 1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
-
-
-					Informe</a>
+				</svg>
+				Informe</a>
 
 			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
 				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-square-fill" fill="currentColor"
 					xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd"
 						d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm4.57 6.033H5.25C5.22 4.147 6.68 3.5 8.006 3.5c1.397 0 2.673.73 2.673 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.355H7.117l-.007-.463c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.901 0-1.358.603-1.358 1.384zm1.251 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
-
-					Ayuda</a>
+				</svg>
+				Ayuda</a>
 
 			<div class="collapse navbar-collapse" id="navbarsExample03">
 				<ul class="navbar-nav mr-auto">
@@ -119,23 +119,35 @@
 							<div id=sc class="card mb-4 shadow-sm">
 								<!-- <div id="gincl"></div> -->
 								<div class="card-body">
-									<div class="d-flex justify-content-between align-items-center">
+									<!-- <div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group">
 											<button type="button" class="btn btn-sm btn-outline-secondary"
-												onclick="location.href='{{ url_for('infor')}}';">Informe</button>
+												onclick="location.href='{{ url_for('infor')}}';">
+												<svg width=" 1em" height="1em" viewBox="0 0 16 16"
+													class="bi bi-printer-fill" fill="currentColor"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5z" />
+													<path fill-rule="evenodd"
+														d="M11 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+													<path fill-rule="evenodd"
+														d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+												</svg>
+											</button>
 										</div>
-									</div>
+									</div> -->
 									<div>
-										<small class="text-muted">Distancias [d0, di] (m )=[ <span id="D00"></span>;
+										<small class="text-muted">[d0, di] (m )=[ <span id="D00"></span>;
 											<span id="D10"></span> ]</small>
 									</div>
-									<a>lat =<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-											id="latitud_value">
-										</span>
-										lon =<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-											id="longitud_value">
-										</span>
-									</a>
+									<small>
+										<a>lat=<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+												id="latitud_value">
+											</span>
+											lon=<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+												id="longitud_value">
+											</span>
+										</a>
+									</small>
 									<div class="d-flex justify-content-between align-items-center">
 										<div id="map" style="width: 500px; height: 350px;"></div>
 									</div>
@@ -143,7 +155,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 
 
 
@@ -159,20 +171,22 @@
 									dy=".3em"></text>
 								</svg>
 								<div class="card-body">
-									<div class="d-flex justify-content-between align-items-center">
+									<!-- <div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group">
 											<button type="button" class="btn btn-sm btn-outline-secondary"
 												onclick="location.href='/dev/infor';">Informe</button>
 										</div>
-									</div>
-									<small class="text-muted">Distancias [d0, di] (m )=[ <span id="D01"></span>; <span
+									</div> -->
+									<small class="text-muted">[d0, di] (m )=[ <span id="D01"></span>; <span
 											id="D11"></span> ]</small>
-									<p class="card-text">
-										<a>Modulo L =<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-												id="modlongitud_value">
-											</span>
-										</a>
-									</p>
+									<small>
+										<p class="card-text">
+											<a>Modulo L =<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+													id="modlongitud_value">
+												</span>
+											</a>
+										</p>
+									</small>
 									<input type="range" class="custom-range" min="0.5" max="3" value="1.7" step="0.1"
 										id="modlongitud_range">
 								</div>
@@ -192,20 +206,22 @@
 									dy=".3em"></text>
 								</svg>
 								<div class="card-body">
-									<div class="d-flex justify-content-between align-items-center">
+									<!-- <div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group">
 											<button type="button" class="btn btn-sm btn-outline-secondary"
 												onclick="location.href='/dev/infor';">Informe</button>
 										</div>
-									</div>
-									<small class="text-muted">Distancias [d0, di] (m )=[ <span id="D02"></span>; <span
+									</div> -->
+									<small class="text-muted">[d0, di] (m )=[ <span id="D02"></span>; <span
 											id="D12"></span> ]</small>
-									<p class="card-text">
-										<a>Peana p=<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-												id="peana_value">
-											</span>
-										</a>
-									</p>
+									<small>
+										<p class="card-text">
+											<a>Peana p=<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+													id="peana_value">
+												</span>
+											</a>
+										</p>
+									</small>
 									<input type="range" class="custom-range" min="0.0" max="1.0" value="0.2" step="0.1"
 										id="peana_range">
 								</div>
@@ -224,21 +240,24 @@
 									dy=".3em"></text>
 								</svg>
 								<div class="card-body">
-									<div class="d-flex justify-content-between align-items-center">
+									<!-- <div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group">
 											<button type="button" class="btn btn-sm btn-outline-secondary"
 												onclick="location.href='/dev/infor';">Informe</button>
 										</div>
-									</div>
-									<small class="text-muted">Distancias [d0, di] (m )=[ <span id="D03"></span>; <span
-											id="D13"></span> ]</small>
-									<p class="card-text">
-										<a>Pretil h<sub>0</sub>=<span
-												class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-												id="pretil_value">
-											</span>
-										</a>
-									</p>
+									</div> -->
+									<small class="text-muted">[d0, di] (m )=[ <span id="D03"></span>; <span
+											id="D13"></span> ]
+									</small>
+									<small>
+										<p class="card-text">
+											<a>Pretil h<sub>0</sub>=<span
+													class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+													id="pretil_value">
+												</span>
+											</a>
+										</p>
+									</small>
 									<input type="range" class="custom-range" min="0.0" max="1.0" value="0.4" step="0.1"
 										id="pretil_range">
 								</div>
@@ -260,21 +279,23 @@
 
 									<div class="d-flex justify-content-between align-items-center">
 
-										<div class="btn-group">
+										<!-- <div class="btn-group">
 											<button type="button" class="btn btn-sm btn-outline-secondary"
 												onclick="location.href='/dev/infor';">Informe</button>
-										</div>
+										</div> -->
 									</div>
-									<small class="text-muted">Distancias [d0, di] (m )=[ <span id="D04"></span>; <span
-											id="D14"></span> ]</small>
-									<p class="card-text">
-										<a>Inclinacion &beta;=
-											<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
-												id="inclinacion_value">
-											</span>
-											<a>
-
-									</p>
+									<small class="text-muted">[d0, di] (m )=[ <span id="D04"></span>; <span
+											id="D14"></span> ]
+									</small>
+									<small>
+										<p class="card-text">
+											<a>Inclinacion &beta;=
+												<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"
+													id="inclinacion_value">
+												</span>
+												<a>
+										</p>
+									</small>
 									<input type="range" class="custom-range" min="0" max="90" value="30" step="5"
 										id="inclinacion_range">
 								</div>
