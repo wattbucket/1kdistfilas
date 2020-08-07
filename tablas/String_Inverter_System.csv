@@ -1,0 +1,23 @@
+Description 	Symbol 	Calculation 	Unit
+Maximum Power (W) 	source_max_power 	module_pmp * array_largest_string 	W
+Open-Circuit Voltage (V) 	source_voc 	module_voc * array_largest_string 	V
+Short-Circuit Current (A) 	source_isc 	module_isc 	A
+Maximum Power Voltage (V) 	source_vmp 	module_vmp * array_largest_string 	V
+Maximum Power Current (A) 	source_imp 	module_imp 	A
+Source Circuit Maximum Current (A), Isc x 1_25 	source_Isc_adjusted 	module_isc * 1_25 	A
+Maximum system voltage Option 1 ( module temp_ correction factor ) 	array_max_sys_voltage_2 	source_voc * ( 1 + module_tc_voc_percent / 100 * ( array_min_temp - 25)) 	V
+Maximum system voltage Option 1 ( general temp_ correction factor) 	array_max_sys_voltage_1 	source_voc * array_voltage_correction_factor 	V
+Maximum system voltage 	array_max_sys_voltage 	sf_max( array_max_sys_voltage_1, array_max_sys_voltage_2 ) 	
+Minimum array voltage ( module temp_ correction factor ) 	array_min_voltage 	array_smallest_string * module_vmp * ( 1 + module_tc_vpmax_percent / 100 * ( array_max_temp - 25 ) ) 	V
+Maximum Power (W) 	array_pmp 	array_num_of_modules * module_pmp 	W
+Open-Circuit Voltage (V) 	array_voc 	source_voc 	V
+Short-Circuit Current (A) 	array_isc 	module_isc * array_num_of_strings 	A
+Maximum Power Voltage (V) 	array_vmp 	module_vmp * array_largest_string 	V
+Maximum Power Current (A) 	array_imp 	module_imp * array_num_of_strings 	A
+PV Power Source Maximum Current (A) 	array_isc_adjusted 	array_isc * 1_25 	A
+PV Power Source Maximum Voltage (V) 	array_vmp_adjusted 	array_max_sys_voltage_2 	V
+PV Power Source Minimum Voltage (V) 	array_vmp_adjusted_min 	??? 	
+Enter Maximum Number of Parallel Source Circuits per Output Circuit (1-2) 	array_circuits_per_MPPT 	Math_ceil( array_num_of_strings / inverter_mppt_channels ) 	
+PV Output Circuit Maximum Current (A) 	array_combined_isc 	source_isc * array_circuits_per_MPPT 	A
+PV Output Circuit Maximum Current (A), Isc x 1_25 	array_combined_isc_adjusted 	module_isc * 1_25 * array_circuits_per_MPPT 	A
+Maximum PV Output Circuit Voltage at Lowest Temperature 	array_max_sys_voltage_2 	array_max_sys_voltage_2 	V

@@ -1,0 +1,12 @@
+Description 	Symbol 	Unit
+Manufacturer name 	optimizer_manufacturer_name 	-
+Model name 	optimizer_name 	-
+Max input voltage 	optimizer_max_input_voltage 	V
+MPPT operating range min 	optimizer_mppt_op_range_min 	V
+MPPT operating range max 	optimizer_mppt_op_range_max 	V
+Max Short Circuit Current (Isc) 	optimizer_max_isc 	A
+Max output current 	optimizer_max_output_current 	A
+Max output voltage 	optimizer_max_output_voltage 	V
+Min optimizers / string 	optimizer_min_optis_per_string 	-
+Max optimizers / string 	optimizer_max_optis_per_string 	-
+Max power / string 	optimizer_max_power_per_string 	-

@@ -1,0 +1,22 @@
+Description 	Symbol 	Calculation 	Unit
+Maximum Power (W) 	inverter_dc_voltage_nominal 	inverter_mppt_max 	v
+Maximum Power (W) 	source_max_power 	module_pmp * array_largest_string 	
+Maximum Power Voltage (V) 	source_vmp 	inverter_dc_voltage_nominal 	
+Maximum Power Current (A) 	source_imp 	source_max_power / source_vmp 	
+Open-Circuit Voltage (V) 	source_voc 	1 * array_largest_string 	
+Short-Circuit Current (A) 	source_isc 	0_6 	
+Maximum Circuit Current (A) 	source_i_max 	optimizer_max_output_current 	
+Source Circuit Maximum Current (A), Isc x 1_25 	source_Isc_adjusted 	module_isc * 1_25 	A
+Maximum system voltage 	array_max_sys_voltage 	500 	
+Maximum system current 	array_max_sys_current 	15 * array_num_of_strings 	
+Minimum array voltage ( module temp_ correction factor ) 	array_min_voltage 	array_smallest_string * module_vmp * ( 1 + module_tc_vpmax_percent / 100 * ( array_max_temp - 25 ) ) 	V
+Maximum Power (W) 	array_pmp 	array_num_of_modules * module_pmp 	W
+Maximum Power Voltage (V) 	array_voc 	source_voc 	V
+Maximum Power Current (A) 	array_isc 	source_isc 	A
+Open-Circuit Voltage (V) 	array_vmp 	string_nominal_voltage[inverter_grid_voltage] 	V
+Short-Circuit Current (A) 	array_imp 	array_pmp / array_vmp 	A
+Short-Circuit Current (A) 	array_imp 	array_imp > inverter_imax_channel ? inverter_imax_channel : array_imp 	A
+Enter Maximum Number of Parallel Source Circuits per Output Circuit (1-2) 	array_circuits_per_MPPT 	Math_ceil( array_num_of_strings / inverter_mppt_channels ) 	
+PV Output Circuit Maximum Current per MPPT (A) 	array_combined_isc 	source_isc * array_circuits_per_MPPT 	A
+Total PV Output Circuit Maximum Current (A) 	array_total_isc 	optimizer_max_output_current * array_num_of_strings 	A
+Maximum module voltage 	module_max_voltage 	module_voc * ( 1 + module_tc_voc_percent / 100 * ( array_min_temp - 25)) 	V

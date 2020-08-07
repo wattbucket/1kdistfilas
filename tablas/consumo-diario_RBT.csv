@@ -1,0 +1,18 @@
+Circuito,Servicio,Potencia (W),Utilizacion h/dia,Energia  (Wh/día)
+c1,iluminacion,200,"",
+c2,general,3450,"",
+c2,frigorífico,,"",
+c3,cocina,5400,"",""
+c3,horno,"","",""
+c4,lavadora,3450,"",
+c4,lavavajillas,,"",
+c4,termo,,"",
+c5,baño,3450,"",
+c5,cocina,,"",
+c6,iluminacion,,"",
+c7,general,,"",
+c8,calefaccion,5750,"",""
+c9,aa,"","",""
+c10,secadora,3450,"",""
+c11,automatizacion,2300,"",""
+c12,c345,"","",""

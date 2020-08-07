@@ -1,0 +1,14 @@
+Description,Symbol,Unit,UA-7-3-DISEÑO
+Inverter manufacturer name,inverter_manufacturer_name,-,
+Inverter model,inverter_device_model_number,-,
+Module manufacturer name,array_manufacturer_name,-,
+Module model,array_device_model_number,-,
+Grid voltage,inverter_grid_voltage,V,
+Number of PV Source Circuits,array_num_of_strings,ea_,
+Total Number of Modules,array_num_of_modules,ea_,
+Maximum Number of Series-Connected Modules per Source Circuit,array_largest_string,ea_,20
+Minimum Number of Series-Connected Modules per Source Circuit,array_smallest_string,ea_,10
+Minimum Distance Above Roof (in),module_array_offset_from_roof,in_,
+Main panel supply OCPD rating (A),interconnection_supply_ocpd_rating,A,
+Main panel busbar rating (A),interconnection_bussbar_rating,A,
+Total of load breakers (A),interconnection_load_breaker_total,A,

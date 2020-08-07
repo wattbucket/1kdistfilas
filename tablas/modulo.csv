@@ -1,0 +1,10 @@
+Descripcion,0,simbolo,ud,Canadian Solar-CS6K-270P,Jinko JKM325PP,variable,Jinko JKM310PP,blog-secciones,Yingli YL280P-29-b,Jinko JKM300PP,Description,ejem1,Simbolo,YL280P-29-b,Jinko JKM320PP,Unit
+Potencia nominal,1,$P_p$,W,270.0,325.0,module_pmp,310.0,300,280,300.0,Maximum power @ STC (W),320,pmp,280,320.0,W
+Tension en circuito abierto,2,$V_{oc}$,V,37.9,46.7,module_voc,45.9,45.3,38.0,45.3,Open-circuit voltage @ STC (V),42.5,voc,38.0,46.4,V
+Tension en el punto Pmax,3,$V_{mp}$,V,30.8,37.6,module_vmp,37.0,36.6,31.3,36.6,Maximum power voltage @ STC (V),37.0,vmp,31.3,37.4,
+Corriente de cortocircuito,4,$I_{sc}$,A,9.32,09.10,module_isc,08.96,8.84,9.45,08.84,Short-circuit current @ STC (A),9.18,isc,9.45,09.05,A
+Corriente en el punto  Pmax,5,$I_{mp}$,A,8.75,8.66,module_imp,8.38,8.2,8.95,8.20,Maximum power current @ STC (A),8.64,imp,8.95,8.56,A
+Coeficiente de temperatura de VOC,6,$\% V_{oc}$,%/°C,-0.31,-0.30,module_tc_voc_percent,-0.31,,-0.30,-0.31,Temp Coeff Voc (%/°C),,tc_voc_percent,-0.30,-0.30,
+Coeficiente de temperatura de PMAX,7,$\% V_{pm}$,%/°C,-0.41,-0.40,module_tc_vpmax_percent,-0.41,,-0.39,-0.41,Temp Coeff Vmp (%/°C),,tc_vpmax_percent,-0.39,-0.40,
+Tension maxima del sistema,8,,V,1000,1000,module_max_system_v,1000,,1000,1000,Maximum system voltage rating (V),,max_system_v,1000,1000,
+Valor máximo del fusible,9,,A,15,15,module_max_series_fuse,15,15,15,15,Maximum overcurrent device rating (A),15,max_series_fuse,15,15,

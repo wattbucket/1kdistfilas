@@ -1,0 +1,26 @@
+Descripcion,Fronius IG Plus 120 V-3,"Fronius Symo 10.0-3-M",Sunny Tripower 15000TL,Sunny Tripower 10000TL,simbolo,variable,"no",Ingecon Sun 5TL M,Symo 15.0-3-M,0,ud,Sunny Tripower 10000TL-a,Sunny Tripower 12000TL
+Número de seguidores MPP,2,"2",2,2,2,inverter_mppt_channels,"0.0001",2,2,1,-,2,2
+Corriente máx. de entrada A,45.8,"27",33,22,$I_{dc\ max_A}$,inverter_imax_channel_A,"0.0001",11,33,2,A,18,22
+Corriente máx. de entrada B,.0001,"16.5",33,11,$I_{dc\ max_B}$,inverter_imax_channel_B,"0.0001",11,27,3,A,10,11
+Corriente máx. cc. de entrada por string (entrada A2 ),40.5,"40.5","",33,,inverter_imax_s_channel_A,"",,49.5,4,A,25,33
+Corriente máx. cc. de entrada por string (entrada B2),45.8,"24.8","",12.5,,inverter_imax_s_channel_B,"",,40.5,5,A,15,12.5
+Rango de Tensión de entrada max.,1000,"1000",1000,1000,$V_{cc\ max}$,inverter_vmax,"0.0001",850,1000,6,V,1000,1000
+Rango de Tension de entrada min.,230,"200",150,150,$V_{cc\ min}$,inverter_vmin,"",,200,7,V,150,150
+Tensión de entrada de inicio,230,"200",188,188,,inverter_vstart,"",,200,8,V,188,188
+Tensión  de entrada nominal,600,"600",600,600,$V_{dc\ r}$,inverter_v_mppt,"0.0001",680,600,9,V,580,600
+Rango de tensión MPP max,600,"800",800,800,$V_{mpp\ max}$,inverter_vmax_mppt,"0.0001",750,800,10,V,800,800
+Rango de tensión MPP min,230,"270",240,380,$V_{mpp\ min}$,inverter_vmin_mppt,"0.0001",125,320,11,V,320,270
+Potencia máxima de CC (con cos φ = 1),15000,"15000",15330,10200,,inverter_max_dc_power,"",,15000,,W,13500,12250
+strings por entrada de punto de máxima potencia (MPP) A,,"3","",4,,inverter_string_numero_A,"",,4,,-,2,4
+strings por entrada de punto de máxima potencia (MPP) B,,"3","",1,,inverter_string_numero_B,"",,2,,-,2,1
+"Potencia asignada de CA  (@ 230 V, 50 Hz)",,"10.0","",10000,,inverter_nominal_ac_output_power,"",,,,W,10000,12000
+Potencia aparente de CA máxima,,"10.0","",10000,,inverter_nominal_ac_output_power,"",,,,VA,10000,12000 VA
+Rango de tensión nominal de CA min,,"150","",160,,inverter_voltage_range_min_ac,"",,,,V,160,160
+Rango de tensión nominal de CA max,,"280","",280,,inverter_voltage_range_max_ac,"",,,,V,280,280
+Factor de potencia a potencia asignada,,"1","",1,,inverter_cosfi,"",,,,,1,1
+Corriente máx. de salida de CA,,"14.4","",16,,inverter_max_ac_output_current,"",,,,A,16,19.2
+Acoplamiento a la red,,"400","",,,inverter_ac_output_voltage,"",,,,,,
+fases,,"3","",,,inverter_ac_output_fases,"",,,,,,
+Máxima salida del generador FV,,"15.0","",,,,"",,,,,,
+Rango de frecuencia (fmín),,"45","",,,,"",,,,,,
+Rango de frecuencia (fmáx),,"65","",,,,"",,,,,,

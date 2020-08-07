@@ -1,0 +1,7 @@
+Descripcion,Symbol,Value
+$T_c$ - máxima temperatura de los módulos (°C),array_max_temp,70
+$T_f$ - mínima temperatura de los módulos (°C),array_min_temp,-10
+irradiancia de minima temperatura de los módulos ( W/m2 ),irrad_array_max_temp,100
+irradiancia de máxima temperatura de los módulos ( W/m2 ),irrad_array_min_temp,1000
+Conductividad del cobre xple 90grados,cobre_conductividad,44
+

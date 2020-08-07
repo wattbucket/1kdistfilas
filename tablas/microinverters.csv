@@ -1,0 +1,7 @@
+Description 	Symbol 	Unit
+Maximum units per branch 	inverter_max_unitsperbranch 	-
+Minimum units per branch 	inverter_min_unitsperbranch 	-
+Minimum panel wattage 	inverter_min_panel_wattage 	W
+Maximum panel wattage 	inverter_max_panel_wattage 	W
+Maximum number of cells per panel 	inverter_max_module_cells 	-
+Maximum watts per string 	inverter_max_watts_per_branch 	-

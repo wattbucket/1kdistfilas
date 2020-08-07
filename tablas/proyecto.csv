@@ -1,0 +1,15 @@
+Descripcion,"",variable,ua92-te2-05,ua92-te2-08,ua93_14,ua93-12,ua93_14s,ua92-te2-06,calculoinstalacion90,blog-secciones,UA532CONFIGURACIÓN,ua089,ua73,ejemplo,TE2E6,ua72-1,ua72-2
+Potencia (kW),"generador",proyecto_Potencia,0,60,30,0,30,5,90,5,10,10,30,5,5,,
+Localicacion,"",proyecto_Localicacion,Badajoz,Madrid,Badajoz,,Badajoz,,,,,Badajoz,Badajoz,,,Malaga,
+Latitud,"",proyecto_Latitud,39,40,39,,30,,,,,39,39,,,,
+Tipo,"",proyecto_Tipo,,"",,,,,,,,autoconsumo,autoconsumo,autoconsumo,autoconsumo,,
+Modulo,"generador",proyecto_modulo,Canadian Solar-CS6K-270P,Jinko JKM320PP,Yingli YL280P-29-b,Jinko JKM310PP,Yingli YL280P-29-b,Jinko JKM300PP,Jinko JKM310PP,blog-secciones,Jinko JKM320PP,Jinko JKM320PP,Yingli YL280P-29-b,ejem1,Jinko JKM300PP,,
+Inversor,"generador",proyecto_inversor,no,Sunny Tripower 15000TL,Fronius IG Plus 120 V-3,no,Fronius Symo 10.0-3-M,Ingecon Sun 5TL M,Symo 15.0-3-M,blog-secciones,Sunny Tripower 10000TL-a,Sunny Tripower 10000TL-a,Fronius Symo 10.0-3-M,,Ingecon Sun 5TL M,,
+Inclinacion (grad.),"",proyecto_Inclinacion,,25,30,,30,,,,,30,30,,,,
+Orientacion (grad.),"",proyecto_Orientacion,,"",,,,,,,,0,0,,,,
+Superficie (m2),"",proyecto_Superficie,,"",,,,,,,,,,,,,
+Consumodiario,"",proyecto_Consumodiario,,"",,,,,,,,,,,,consumodiario-ua72-1,
+Consumoanual,"",proyecto_Consumoanual,,"",,,,,,,,,,,,,Consumo-anual
+strings,"",proyecto_strings,,"",,,,,,2,,,,,,,
+panelesporstring,"",proyecto_panelesporstring,,"",,,,,,8,,,,,,,
+Numero de Inversores,"generador",proyecto_Cantidad_Inver,,"",,,,,,,,3,3,,1,,

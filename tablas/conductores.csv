@@ -1,0 +1,7 @@
+$Longitud_{Tramo}$,Symbol,proyecto,ua73,fases,potencia,Tensión_U1
+$L_{FV-CS}$,conductor_l_fv2cs,ua73,35,1,,
+$L_{CS-I}$,conductor_l_cs2in,ua73,7,1,,
+$L_{CGMP}$,conductor_l_in2cm,ua73,18,1,,
+$L_{CGMP-CC}$,conductor_l_cm2cc,ua73,15,1,,
+$L_{CC-CGP}$,conductor_l_cc2cp,ua73,4,1,,
+,,,,,,

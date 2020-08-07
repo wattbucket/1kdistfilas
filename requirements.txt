@@ -1,0 +1,8 @@
+flask
+numpy
+pandas
+matplotlib
+bokeh
+zappa
+folium
+
